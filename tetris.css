@@ -1,0 +1,64 @@
+body {
+    font-family: sans-serif;
+    background-image: url("tree.gif");
+    background-size: 5%;
+    background-blend-mode: lighten;
+    background-repeat: repeat;   /* Prevents the image from repeating */
+    background-position: center;    /* Centers the image within the cell */
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game-board {
+    border: 2px solid #aaa;
+    background-color:teal;
+    margin-bottom: 10px;
+}
+
+#game-board td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #444;
+}
+
+.filled {
+    background-color: #0f0; /* Fallback or underlying color */
+    background-image: url("tree.gif");
+    background-size: cover;         /* Ensures the image covers the cell */
+    background-repeat: no-repeat;   /* Prevents the image from repeating */
+    background-position: center;    /* Centers the image within the cell */
+}
+
+.score {
+    font-size: 1.2em;
+    padding: 10px;
+    color: white;
+    background-color:teal;
+}
+
+.controls {
+      margin-top: 10px;
+}
+
+.controls button {
+      background-color: darkgreen;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      margin: 0 5px;
+      cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: peru;
+}
